@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhayavu Annai Arakkattalai Trust | Global Tree Plantation & Nature Conservation</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Fixed styling fallback since flex/grid are fully supported in browser but keeping styles simple */
+        .gradient-bg {
+            background: linear-gradient(135deg, #132A13 0%, #050C05 100%);
+        }
+        /* Mobile menu toggle classes */
+        .mobile-menu.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-[#F9FBF7] text-gray-800 antialiased selection:bg-[#4F772D] selection:text-white">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-[#132A13] text-emerald-100 text-xs py-2 px-4 text-center tracking-wider font-medium uppercase relative z-50">
+        <i class="fa-solid fa-seedling mr-2 text-lime-400 animate-pulse"></i> Monsoon Plantation Drive 2026 is Active! Every ₹250 Plants & Protects One Native Tree.
+    </div>
+
+    <!-- NAVIGATION HEADER -->
+    <header class="sticky top-0 z-50 bg-[#F9FBF7]/95 backdrop-blur-md border-b border-[#ECF2E8] shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo & Title Area -->
+            <a href="#home" class="flex items-center space-x-3 group">
+                <div class="w-11 h-11 bg-[#31572C] rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-105 transition duration-300">
+                    <i class="fa-solid fa-tree text-xl text-lime-300"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-bold text-[#132A13] tracking-tight block uppercase">Dhayavu Annai</span>
+                    <span class="text-xs text-[#4F772D] tracking-widest block -mt-1 font-bold uppercase">Arakkattalai Trust</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-8 font-semibold text-sm text-gray-600">
+                <a href="#home" class="text-[#31572C] hover:text-[#132A13] transition py-2 border-b-2 border-[#31572C]">Home</a>
+                <a href="#about" class="hover:text-[#132A13] transition py-2 border-b-2 border-transparent hover:border-[#31572C]">Our Mission</a>
+                <a href="#campaigns" class="hover:text-[#132A13] transition py-2 border-b-2 border-transparent hover:border-[#31572C]">Plantation Zones</a>
+                <a href="#gallery" class="hover:text-[#132A13] transition py-2 border-b-2 border-transparent hover:border-[#31572C]">Gallery</a>
+                <a href="#transparency" class="hover:text-[#132A13] transition py-2 border-b-2 border-transparent hover:border-[#31572C]">Transparency</a>
+                <a href="#contact" class="hover:text-[#132A13] transition py-2 border-b-2 border-transparent hover:border-[#31572C]">Contact</a>
+            </nav>
+
+            <!-- CTA Action Button -->
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#donate" class="bg-[#31572C] hover:bg-[#132A13] text-white px-6 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase transition transform hover:-translate-y-0.5 shadow-md hover:shadow-lg">
+                    Sponsor A Tree
+                </a>
+            </div>
+
+            <!-- Mobile Menu Hamburger Button -->
+            <button id="menu-btn" class="md:hidden text-[#132A13] focus:outline-none p-2" aria-label="Toggle Navigation Menu">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dynamic Dropdown Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden md:hidden bg-[#F9FBF7] border-b border-[#ECF2E8] px-4 pt-2 pb-6 space-y-3 shadow-inner">
+            <a href="#home" class="block font-medium text-gray-700 hover:text-[#31572C] py-2 border-b border-gray-100">Home</a>
+            <a href="#about" class="block font-medium text-gray-700 hover:text-[#31572C] py-2 border-b border-gray-100">Our Mission</a>
+            <a href="#campaigns" class="block font-medium text-gray-700 hover:text-[#31572C] py-2 border-b border-gray-100">Plantation Zones</a>
+            <a href="#gallery" class="block font-medium text-gray-700 hover:text-[#31572C] py-2 border-b border-gray-100">Gallery</a>
+            <a href="#transparency" class="block font-medium text-gray-700 hover:text-[#31572C] py-2 border-b border-gray-100">Transparency</a>
+            <a href="#contact" class="block font-medium text-gray-700 hover:text-[#31572C] py-2 mb-4">Contact</a>
+            <a href="#donate" class="block bg-[#31572C] text-white text-center py-3 rounded-xl font-bold uppercase text-xs tracking-wider shadow">
+                Sponsor A Tree Now
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative bg-[#EAF0E4] py-16 lg:py-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Narrative Content Column -->
+                <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-white/90 border border-lime-200 px-3 py-1.5 rounded-full shadow-sm text-xs font-bold text-[#31572C] uppercase tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-lime-500 animate-ping"></span>
+                        <span>Government Registered NGO: Reg No. 142/2021</span>
+                    </div>
+                    <h1 class="serif-font text-4xl sm:text-5xl lg:text-6xl text-[#132A13] font-bold leading-tight">
+                        Heal the Earth, One <span class="italic text-[#4F772D]">Sapling</span> at a Time.
+                    </h1>
+                    <p class="text-gray-600 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        Dhayavu Annai Arakkattalai Trust is committed to combating global warming, expanding degraded rural canopies, and restoring vanished local microclimates through community afforestation models.
+                    </p>
+                    <div class="pt-4 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                        <a href="#campaigns" class="bg-[#31572C] hover:bg-[#132A13] text-white text-center px-8 py-4 rounded-full text-sm font-bold tracking-wide shadow-lg transition duration-300">
+                            Explore Active Green Zones
+                        </a>
+                        <a href="#about" class="bg-white hover:bg-gray-50 text-gray-700 text-center border border-gray-200 px-8 py-4 rounded-full text-sm font-bold tracking-wide shadow-sm transition flex items-center justify-center space-x-2">
+                            <span>Our Blueprint</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Visual Composition Column -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative w-full max-w-md mx-auto aspect-square rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white transform lg:rotate-2 hover:rotate-0 transition duration-500">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=800" alt="Hands holding soil with a fresh green sapling sprout" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <!-- Floating Indicator Overlay -->
+                    <div class="absolute -bottom-4 left-4 bg-white p-4 rounded-2xl shadow-xl border border-gray-100 flex items-center space-x-4 max-w-xs transform -rotate-1">
+                        <div class="w-12 h-12 bg-lime-50 rounded-xl flex items-center justify-center text-[#31572C] text-2xl shrink-0">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-xs uppercase tracking-wide">Geo-Tagged Protection</h4>
+                            <p class="text-[11px] text-gray-500 mt-0.5">Every tree gets a unique GPS stamp and 3 full years of maintenance tracking.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Right Background Accent Sheet -->
+        <div class="absolute right-0 top-0 w-1/3 h-full bg-[#DFE9D9] opacity-40 rounded-l-full -z-0 hidden lg:block"></div>
+    </section>
+
+    <!-- METRICS & ECOLOGICAL COUNTER BANNER -->
+    <section class="bg-[#132A13] text-white py-14 border-y border-[#31572C]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="space-y-1">
+                    <div class="serif-font text-3xl sm:text-4xl font-bold text-lime-300">58,420+</div>
+                    <div class="text-xs sm:text-sm uppercase tracking-widest text-emerald-100/70 font-semibold">Trees Rooted</div>
+                </div>
+                <div class="space-y-1">
+                    <div class="serif-font text-3xl sm:text-4xl font-bold text-lime-300">140+</div>
+                    <div class="text-xs sm:text-sm uppercase tracking-widest text-emerald-100/70 font-semibold">Acres Reforested</div>
+                </div>
+                <div class="space-y-1">
+                    <div class="serif-font text-3xl sm:text-4xl font-bold text-lime-300">18+</div>
+                    <div class="text-xs sm:text-sm uppercase tracking-widest text-emerald-100/70 font-semibold">Native Species</div>
+                </div>
+                <div class="space-y-1">
+                    <div class="serif-font text-3xl sm:text-4xl font-bold text-lime-300">94.2%</div>
+                    <div class="text-xs sm:text-sm uppercase tracking-widest text-emerald-100/70 font-semibold">Survival Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHILOSOPHY & ABOUT SECTION -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Masonry Layout Images Grid Column -->
+                <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <img class="w-full object-cover h-48 rounded-3xl shadow-sm hover:shadow-md transition" src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&q=80&w=400" alt="Beautiful deep green sunlit forest landscape canopy">
+                        <img class="w-full object-cover h-64 rounded-3xl shadow-sm hover:shadow-md transition" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=400" alt="Lush green wilderness mountainside reforested zone">
+                    </div>
+                    <div class="space-y-4 pt-10">
+                        <img class="w-full object-cover h-64 rounded-3xl shadow-sm hover:shadow-md transition" src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&q=80&w=400" alt="Close up macro of fresh light green seedling sprouting leaf structure">
+                        <img class="w-full object-cover h-48 rounded-3xl shadow-sm hover:shadow-md transition" src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&q=80&w=400" alt="Quiet trail pathway cutting through pristine woodland ecosystem">
+                    </div>
+                </div>
+
+                <!-- Descriptive Content Narrative Column -->
+                <div class="lg:col-span-7 space-y-6 lg:pl-4">
+                    <div class="text-[#4F772D] text-xs font-bold uppercase tracking-widest bg-[#F4F7F1] inline-block px-3 py-1 rounded-md">Our Ecological Philosophy</div>
+                    <h2 class="serif-font text-3xl sm:text-4xl text-[#132A13] font-bold">Reversing Global Warming by Restoring Native Canopies.</h2>
+                    <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+                        At Dhayavu Annai Arakkattalai Trust, we reject short-term cosmetic greening. We believe that saving nature requires strategic, scientific, and community-owned forestry frameworks. We carefully study local topsoil degradation profiles and introduce diverse native species to foster stable plant guilds that anchor real resilience.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        By integrating nearby agrarian families into our logistics pipelines, we supply sustained employment opportunities while ensuring that every forest belt remains strictly protected from early stage threats.
+                    </p>
+                    
+                    <!-- Value Proposition Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-9 h-9 rounded-xl bg-lime-50 flex items-center justify-center text-[#31572C] shrink-0 shadow-sm">
+                                <i class="fa-solid fa-dna text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">Endemic Species Safeguard</h4>
+                                <p class="text-xs text-gray-500 mt-1">We harvest, germinate, and plant strict native species like Neem, Pungan, and Peepal to promote insect and avian lifecycle protection.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-9 h-9 rounded-xl bg-lime-50 flex items-center justify-center text-[#31572C] shrink-0 shadow-sm">
+                                <i class="fa-solid fa-faucet-drip text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">Water Basin Recharging</h4>
+                                <p class="text-xs text-gray-500 mt-1">Targeted dense planting along drying river networks dramatically enhances subterranean soil water holding capacities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE REFORESTATION CAMPAIGNS SECTOR -->
+    <section id="campaigns" class="py-20 bg-[#F4F7F1]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header Title text -->
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <div class="text-[#31572C] text-xs font-bold uppercase tracking-widest">Active Planting Frameworks</div>
+                <h2 class="serif-font text-3xl sm:text-4xl text-[#132A13] font-bold">Our Critical Plantation Initiatives</h2>
+                <p class="text-gray-500 text-sm">Select an active ecological zone to sponsor. You will receive regular health progress audits and explicit GPS tracking tags via email.</p>
+            </div>
+
+            <!-- Campaign Cards Container Flex Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Campaign Card Unit 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col border border-[#E3ECE0]">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=600" alt="Volunteers working inside a dense young Miyawaki urban forest layout" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-emerald-800 text-white text-[10px] uppercase tracking-wider font-bold px-3 py-1.5 rounded-full shadow-md">Urban Areas</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-900 mb-2 hover:text-[#31572C] transition">Miyawaki Ultra-Dense Micro Forests</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed line-clamp-3">
+                                Packing native saplings closely into optimized urban plots to yield self-sustaining, multi-layered forest canopies that lower city heat-island trends.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100 flex justify-between items-center text-xs">
+                            <span class="text-gray-500 font-medium">Sponsorship: <strong class="text-[#132A13] font-bold">₹250 / Sapling</strong></span>
+                            <a href="#donate" class="text-[#31572C] font-bold hover:underline flex items-center space-x-1">
+                                <span>Fund</span> <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Campaign Card Unit 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col border border-[#E3ECE0]">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80&w=600" alt="River bank shores secured with dense new green tree lines" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-blue-800 text-white text-[10px] uppercase tracking-wider font-bold px-3 py-1.5 rounded-full shadow-md">Riparian Zones</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-900 mb-2 hover:text-[#31572C] transition">Riverbank & Lake Basin Anchors</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed line-clamp-3">
+                                Planting deep-root native tree varieties along vulnerable public water basins to arrest extensive topsoil runoff during seasonal flash floods.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100 flex justify-between items-center text-xs">
+                            <span class="text-gray-500 font-medium">Sponsorship: <strong class="text-[#132A13] font-bold">₹150 / Sapling</strong></span>
+                            <a href="#donate" class="text-[#31572C] font-bold hover:underline flex items-center space-x-1">
+                                <span>Fund</span> <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Campaign Card Unit 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col border border-[#E3ECE0]">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&q=80&w=600" alt="Lush organic farm orchard bearing rich green fruits under sunlight" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-amber-800 text-white text-[10px] uppercase tracking-wider font-bold px-3 py-1.5 rounded-full shadow-md">Agroforestry</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-900 mb-2 hover:text-[#31572C] transition">Sustainable Farmer Fruit Orchards</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed line-clamp-3">
+                                Provisioning commercial fruit-bearing saplings (Mango, Jackfruit, Tamarind) directly to marginalized rural families to double incomes while scaling regional canopy cover.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100 flex justify-between items-center text-xs">
+                            <span class="text-gray-500 font-medium">Sponsorship: <strong class="text-[#132A13] font-bold">₹300 / Sapling</strong></span>
+                            <a href="#donate" class="text-[#31572C] font-bold hover:underline flex items-center space-x-1">
+                                <span>Fund</span> <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECURE GATEWAY & TRUST PAYMENT PORTAL SECTION -->
+    <section id="donate" class="py-20 gradient-bg text-white relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Information Grid Column -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="text-lime-300 text-xs font-bold uppercase tracking-widest bg-emerald-950 inline-block px-3 py-1 rounded-md border border-emerald-800">Verified Payment Portal</div>
+                    <h2 class="serif-font text-3xl sm:text-4xl font-bold leading-tight">Every Single Rupee Secures a Living Green Canopy.</h2>
+                    <p class="text-emerald-100/80 text-sm leading-relaxed">
+                        Your direct financial contributions transparently fund sapling excavation logistics, soil organic amendment purchases, bamboo tree guard defense installation, and daily caretaking wages for local rural youth.
+                    </p>
+                    
+                    <!-- Explicit Tax benefit info tags -->
+                    <div class="space-y-3 pt-2 text-sm text-emerald-200">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-emerald-900/50 flex items-center justify-center text-lime-400 border border-emerald-700">
+                                <i class="fa-solid fa-building-columns text-xs"></i>
+                            </div>
+                            <span>Registered Under section 12A & 80G for complete Tax Exemptions.</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-emerald-900/50 flex items-center justify-center text-lime-400 border border-emerald-700">
+                                <i class="fa-solid fa-file-shield text-xs"></i>
+                            </div>
+                            <span>100% Secure SSL encrypted manual bank transfer processing.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Structured Bank Details Card Column -->
+                <div class="lg:col-span-6">
+                    <div class="bg-white text-gray-800 rounded-3xl p-6 sm:p-8 shadow-2xl border border-emerald-950/20">
+                        <h3 class="font-bold text-lg text-[#132A13] mb-4 flex items-center space-x-2">
+                            <i class="fa-solid fa-shield-halved text-emerald-700"></i>
+                            <span>Official Bank Wire Details</span>
+                        </h3>
+                        
+                        <!-- Account Table Details Element -->
+                        <div class="bg-[#F4F7F1] rounded-2xl p-4 space-y-3.5 text-xs border border-[#E3ECE0]">
+                            <div class="flex justify-between items-center py-1.5 border-b border-gray-200">
+                                <span class="text-gray-400 uppercase tracking-wider font-bold text-[10px]">Account Name</span>
+                                <span class="font-bold text-gray-800 text-right">Dhayavu Annai Arakkattalai Trust</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1.5 border-b border-gray-200">
+                                <span class="text-gray-400 uppercase tracking-wider font-bold text-[10px]">Bank Corporate Name</span>
+                                <span class="font-bold text-gray-800 text-right">State Bank of India (SBI)</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1.5 border-b border-gray-200">
+                                <span class="text-gray-400 uppercase tracking-wider font-bold text-[10px]">Account Number</span>
+                                <span class="font-mono font-bold text-gray-900 text-right text-sm tracking-wider select-all">40123456789</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1.5 border-b border-gray-200">
+                                <span class="text-gray-400 uppercase tracking-wider font-bold text-[10px]">IFS Code</span>
+                                <span class="font-mono font-bold text-emerald-700 text-right text-sm tracking-wider select-all">SBIN0001234</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1.5">
+                                <span class="text-gray-400 uppercase tracking-wider font-bold text-[10px]">Branch Office</span>
+                                <span class="font-bold text-gray-700 text-right">Main Branch, Tiruvannamalai</span>
+                            </div>
+                        </div>
+
+                        <!-- Scan to pay layout -->
+                        <div class="mt-6 pt-4 border-t border-gray-100 text-center">
+                            <div class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-3">Scan Using Any Unified Payment App (UPI)</div>
+                            
+                            <!-- Designed Placeholder QR Box layout -->
+                            <div class="w-40 h-40 mx-auto border-2 border-dashed border-[#31572C]/30 rounded-2xl p-2.5 bg-white flex items-center justify-center shadow-inner relative group">
+                                <div class="w-full h-full bg-gray-50 rounded-xl flex flex-col items-center justify-center text-gray-400 font-mono text-[10px]">
+                                    <i class="fa-solid fa-qrcode text-4xl mb-1 text-[#31572C]"></i>
+                                    <span class="font-bold text-gray-600">UPI ID: daat@sbi</span>
+                                </div>
+                            </div>
+                            <p class="text-[11px] text-gray-400 mt-3 italic">Please send a screenshot of the payment receipt along with your PAN card info to our email for tax receipts.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Absolute Design Ambient Blur Mesh background -->
+        <div class="absolute -left-10 -bottom-10 w-44 h-44 bg-lime-800/20 rounded-full blur-2xl"></div>
+    </section>
+
+    <!-- REAL TIME PROGRESS EVIDENCE PHOTO GALLERY SECTION -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <div class="text-[#31572C] text-xs font-bold uppercase tracking-widest bg-[#F4F7F1] inline-block px-3 py-1 rounded-md">Ground Level Visual Records</div>
+                <h2 class="serif-font text-3xl sm:text-4xl text-[#132A13] font-bold">Our Flourishing Green Zones</h2>
+                <p class="text-gray-500 text-sm">Real, untouched photography documentations mapping our massive weekend soil-excavation drives and sapling distributions.</p>
+            </div>
+
+            <!-- Responsive Gallery Block Grid layout -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-2xl h-48 md:h-64 shadow-sm hover:shadow-lg border border-gray-100 group transition">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=400" alt="Community planting sapling close up view" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-2xl h-48 md:h-64 shadow-sm hover:shadow-lg border border-gray-100 group transition">
+                    <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&q=80&w=400" alt="Beautiful sunbeams piercing through pristine native green forest cover canopy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-2xl h-48 md:h-64 shadow-sm hover:shadow-lg border border-gray-100 group transition">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80&w=400" alt="River banks completely buffered with robust tree roots structures" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-2xl h-48 md:h-64 shadow-sm hover:shadow-lg border border-gray-100 group transition">
+                    <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400" alt="Rows of beautiful healthy green vegetation saplings ready for transplantation" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPLIANCE & LEGAL TRANSPARENCY SECTION -->
+    <section id="transparency" class="py-16 bg-[#F9FBF7] border-t border-[#ECF2E8]">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl p-6 sm:p-10 border border-[#E3ECE0] shadow-sm space-y-8">
+                <div class="text-center max-w-xl mx-auto space-y-2">
+                    <h3 class="serif-font text-2xl font-bold text-[#132A13]">Compliance & Transparency Safeguards</h3>
+                    <p class="text-xs text-gray-500">We maintain an open-book policy. Download our statutory filings or review registration metrics anytime.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    <div class="p-4 bg-[#F4F7F1] rounded-2xl border border-[#E3ECE0]">
+                        <div class="w-10 h-10 bg-[#31572C] rounded-full flex items-center justify-center text-white mx-auto mb-3">
+                            <i class="fa-solid fa-passport text-sm"></i>
+                        </div>
+                        <h4 class="font-bold text-xs text-gray-900 uppercase tracking-wide">NGO Darpan Registration</h4>
+                        <p class="text-xs text-gray-500 mt-1 font-mono">ID: TN/2021/0289451</p>
+                    </div>
+                    <div class="p-4 bg-[#F4F7F1] rounded-2xl border border-[#E3ECE0]">
+                        <div class="w-10 h-10 bg-[#31572C] rounded-full flex items-center justify-center text-white mx-auto mb-3">
+                            <i class="fa-solid fa-file-signature text-sm"></i>
+                        </div>
+                        <h4 class="font-bold text-xs text-gray-900 uppercase tracking-wide">Section 80G Approval</h4>
+                        <p class="text-xs text-gray-500 mt-1 font-mono">CIT/EXEMP/80G/9482</p>
+                    </div>
+                    <div class="p-4 bg-[#F4F7F1] rounded-2xl border border-[#E3ECE0]">
+                        <div class="w-10 h-10 bg-[#31572C] rounded-full flex items-center justify-center text-white mx-auto mb-3">
+                            <i class="fa-solid fa-scale-balanced text-sm"></i>
+                        </div>
+                        <h4 class="font-bold text-xs text-gray-900 uppercase tracking-wide">Corporate CSR Status</h4>
+                        <p class="text-xs text-gray-500 mt-1 font-mono">Form CSR-1: CSR0001943</p>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-circle-info text-amber-600 text-sm"></i>
+                        <span>Audited annual financial reports and plant audit sheets are dispatched every financial year end to all active sponsors.</span>
+                    </div>
+                    <a href="#contact" class="text-[#31572C] font-bold hover:underline shrink-0">Request Audit File &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT INQUIRY & COMMUNICATIONS CENTRE -->
+    <section id="contact" class="py-20 bg-[#F4F7F1] border-t border-[#E3ECE0]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Physical Contact details Column layout -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="text-[#31572C] text-xs font-bold uppercase tracking-widest bg-white inline-block px-3 py-1 rounded-md border border-gray-200">Get In Touch</div>
+                    <h2 class="serif-font text-3xl text-[#132A13] font-bold">Join Our Next Massive Weekend Digging Track.</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Are you an institutional student group coordinator, individual nature enthusiast, or local land owner wanting to execute a native reforestation project layout? Send an explicit request note to our operational desk.
+                    </p>
+                    
+                    <!-- Core physical access vectors -->
+                    <div class="space-y-4 pt-4 text-sm text-gray-700">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#31572C] shadow-sm shrink-0 border border-gray-100">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-xs text-gray-400 uppercase tracking-wider">Registered Trust Headquarters</h5>
+                                <p class="text-gray-800 text-sm mt-0.5">Dhayavu Annai Trust, No. 42, Car Street, Tiruvannamalai, Tamil Nadu, 606601, India</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#31572C] shadow-sm shrink-0 border border-gray-100">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-xs text-gray-400 uppercase tracking-wider">Official Communications Email</h5>
+                                <p class="text-[#31572C] text-sm font-semibold mt-0.5 select-all break-all">green@dhayavuannaitrust.org</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Structured Dynamic Submission form column -->
+                <div class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-gray-100">
+                    <form action="#" method="POST" class="space-y-4" onsubmit="event.preventDefault(); alert('Eco-submission recorded successfully! Our reforestation management team will contact you within 24 operational hours.');">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-1">Your Full Name</label>
+                                <input type="text" autocomplete="name" required class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#31572C] focus:bg-white transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-1">Email Address</label>
+                                <input type="email" autocomplete="email" required class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#31572C] focus:bg-white transition">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-1">Inquiry Category Selector</label>
+                            <select required class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#31572C] focus:bg-white transition text-gray-600 font-medium">
+                                <option>Sponsor Saplings & Carbon Tracking</option>
+                                <option>Weekend Volunteer Registration Hub</option>
+                                <option>Corporate CSR Reforestation Alliance</option>
+                                <option>Land Area Donation For Dense Afforestation</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-1">Message / Detail Request Description</label>
+                            <textarea rows="4" required class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#31572C] focus:bg-white transition placeholder-gray-400" placeholder="Please supply explicitly details about how you plan to contribute to reforesting zones..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-[#31572C] hover:bg-[#132A13] text-white py-3.5 rounded-xl text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg transition duration-300">
+                            Submit Secure Reforestation Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPREHENSIVE SITE FOOTER SECTION -->
+    <footer class="bg-[#050C05] text-gray-400 py-12 text-sm border-t border-emerald-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-emerald-900/40">
+                
+                <!-- Trust Identity Briefing element -->
+                <div class="md:col-span-5 space-y-4">
+                    <div class="flex items-center space-x-2 text-white">
+                        <div class="w-8 h-8 bg-[#31572C] rounded-full flex items-center justify-center text-white">
+                            <i class="fa-solid fa-tree text-sm text-lime-300"></i>
+                        </div>
+                        <span class="font-bold tracking-wider text-base uppercase">Dhayavu Annai Trust</span>
+                    </div>
+                    <p class="text-xs text-gray-400 max-w-sm leading-relaxed">
+                        Registered Non-Governmental Organization (NGO Registration No. 142/2021) operating high-transparency ecological buffer zones, massive multi-species native plantations, and regional community-backed land protection initiatives.
+                    </p>
+                </div>
+
+                <!-- Structured Internal Navigation Map Links -->
+                <div class="md:col-span-4 grid grid-cols-2 gap-4 text-xs uppercase tracking-wider font-bold">
+                    <div class="flex flex-col space-y-3">
+                        <a href="#home" class="hover:text-white transition">Home Dashboard</a>
+                        <a href="#about" class="hover:text-white transition">Our Blueprint</a>
+                        <a href="#campaigns" class="hover:text-white transition">Plantation Zones</a>
+                    </div>
+                    <div class="flex flex-col space-y-3">
+                        <a href="#gallery" class="hover:text-white transition">Media Gallery</a>
+                        <a href="#transparency" class="hover:text-white transition">Compliance Documents</a>
+                        <a href="#donate" class="hover:text-white transition">Sponsor Now</a>
+                    </div>
+                </div>
+
+                <!-- Social handle icon connections -->
+                <div class="md:col-span-3 space-y-3 md:text-right">
+                    <h5 class="text-xs text-gray-500 font-bold uppercase tracking-widest">Connect Internationally</h5>
+                    <div class="flex space-x-4 md:justify-end text-xl text-gray-400">
+                        <a href="#" class="hover:text-lime-400 transition" aria-label="Facebook Link Handle"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="hover:text-lime-400 transition" aria-label="Instagram Link Handle"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:text-lime-400 transition" aria-label="X Twitter Link Handle"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="hover:text-lime-400 transition" aria-label="LinkedIn Link Handle"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- LEGAL RIGHTS AND GITHUB PAGES DEPLOYMENT COMPLIANCE BANNER -->
+            <div class="pt-8 flex flex-col md:flex-row justify-between text-xs text-gray-500 gap-4">
+                <div class="space-y-1">
+                    <p>&copy; 2026 Dhayavu Annai Arakkattalai Trust. All Rights Reserved.</p>
+                    <p class="text-[11px] text-gray-600 font-medium">All financial contributions qualify for 50% tax deductions under statutory Section 80G provisions of the Income Tax Act.</p>
+                </div>
+                <div class="flex flex-col md:items-end gap-1 shrink-0">
+                    <span class="flex items-center gap-1">Preserved for Nature with <i class="fa-solid fa-leaf text-lime-500 animate-pulse"></i> globally.</span>
+                    <span class="text-[10px] text-gray-600 font-mono tracking-tight bg-emerald-950/40 px-2 py-0.5 rounded-md border border-emerald-900/20">Production-Ready Deployment Branch: master</span>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- LIGHT DYNAMIC JAVASCRIPT LOGIC BLOCK FOR MOBILE MENUS -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile dropdown smoothly whenever an asset page anchor is triggered
+        const menuLinks = menu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
